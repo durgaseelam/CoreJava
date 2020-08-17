@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.apex.core.ApexBaseTest"/>
+      <class name="com.apex.user.api.test.UserAPIDeleteTest"/>
+      <class name="com.apex.user.api.test.UserAPIGetAllTest"/>
+      <class name="com.apex.user.api.test.UserAPIGetTest"/>
+      <class name="com.apex.user.api.test.UserAPIPostTest"/>
+      <class name="com.apex.user.api.test.UserAPIPutTest"/>
+      <class name="com.apex.user.api.test.UserAPITest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.apex.user.api.test.UserAPIGetTest">
+        <methods>
+          <include name="testGetwithSuccessData"/>
+        </methods>
+      </class> <!-- com.apex.user.api.test.UserAPIGetTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
